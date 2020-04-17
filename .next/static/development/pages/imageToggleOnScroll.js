@@ -161,6 +161,9 @@ var ImageToggleOnScroll = function ImageToggleOnScroll(_ref) {
   var isInView = function isInView() {
     if (imageRef.current) {
       var rect = imageRef.current.getBoundingClientRect();
+      console.log({
+        imageRef: imageRef
+      });
       return rect.top >= 0 && rect.bottom <= window.innerHeight;
     }
   };
@@ -183,7 +186,7 @@ var ImageToggleOnScroll = function ImageToggleOnScroll(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 36,
       columnNumber: 5
     }
   }, __jsx("img", {
@@ -194,7 +197,7 @@ var ImageToggleOnScroll = function ImageToggleOnScroll(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 37,
       columnNumber: 7
     }
   }));
@@ -204,7 +207,7 @@ var ImageToggleOnScroll = function ImageToggleOnScroll(_ref) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 4:
 /*!****************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2FimageToggleOnScroll&absolutePagePath=%2FUsers%2Fdanlubbers%2FDocuments%2FGitHub%2Fpluralsight-tutorials%2Fhello-next%2Fpages%2FimageToggleOnScroll.js ***!
   \****************************************************************************************************************************************************************************************************/
@@ -227,5 +230,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=imageToggleOnScroll.js.map

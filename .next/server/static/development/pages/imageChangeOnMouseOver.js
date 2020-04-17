@@ -88,15 +88,15 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/imageToggleOnScroll.js":
-/*!**************************************!*\
-  !*** ./pages/imageToggleOnScroll.js ***!
-  \**************************************/
+/***/ "./pages/imageChangeOnMouseOver.js":
+/*!*****************************************!*\
+  !*** ./pages/imageChangeOnMouseOver.js ***!
+  \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -104,13 +104,13 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _src_ImageToggleOnScroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/ImageToggleOnScroll */ "./src/ImageToggleOnScroll.js");
-var _jsxFileName = "/Users/danlubbers/Documents/GitHub/pluralsight-tutorials/hello-next/pages/imageToggleOnScroll.js";
+/* harmony import */ var _src_ImageToggleOneMouseOver__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/ImageToggleOneMouseOver */ "./src/ImageToggleOneMouseOver.js");
+var _jsxFileName = "/Users/danlubbers/Documents/GitHub/pluralsight-tutorials/hello-next/pages/imageChangeOnMouseOver.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const imageChangeOnScroll = () => {
+const imageChangeOnMouseOver = () => {
   return __jsx("div", {
     __self: undefined,
     __source: {
@@ -118,7 +118,7 @@ const imageChangeOnScroll = () => {
       lineNumber: 6,
       columnNumber: 5
     }
-  }, __jsx(_src_ImageToggleOnScroll__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, __jsx(_src_ImageToggleOneMouseOver__WEBPACK_IMPORTED_MODULE_1__["default"], {
     primaryImage: "/static/floro-cristina-5107-final.jpg",
     secondaryImage: "./static/floro-cristina-5107-before.jpg",
     alt: "",
@@ -128,67 +128,17 @@ const imageChangeOnScroll = () => {
       lineNumber: 7,
       columnNumber: 7
     }
-  }), __jsx(_src_ImageToggleOnScroll__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    primaryImage: "/static/floro-cristina-5107-final.jpg",
-    secondaryImage: "./static/floro-cristina-5107-before.jpg",
-    alt: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 7
-    }
-  }), __jsx(_src_ImageToggleOnScroll__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    primaryImage: "/static/floro-cristina-5107-final.jpg",
-    secondaryImage: "./static/floro-cristina-5107-before.jpg",
-    alt: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 7
-    }
-  }), __jsx(_src_ImageToggleOnScroll__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    primaryImage: "/static/floro-cristina-5107-final.jpg",
-    secondaryImage: "./static/floro-cristina-5107-before.jpg",
-    alt: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 7
-    }
-  }), __jsx(_src_ImageToggleOnScroll__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    primaryImage: "/static/floro-cristina-5107-final.jpg",
-    secondaryImage: "./static/floro-cristina-5107-before.jpg",
-    alt: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 7
-    }
-  }), __jsx(_src_ImageToggleOnScroll__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    primaryImage: "/static/floro-cristina-5107-final.jpg",
-    secondaryImage: "./static/floro-cristina-5107-before.jpg",
-    alt: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 7
-    }
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (imageChangeOnScroll);
+/* harmony default export */ __webpack_exports__["default"] = (imageChangeOnMouseOver);
 
 /***/ }),
 
-/***/ "./src/ImageToggleOnScroll.js":
-/*!************************************!*\
-  !*** ./src/ImageToggleOnScroll.js ***!
-  \************************************/
+/***/ "./src/ImageToggleOneMouseOver.js":
+/*!****************************************!*\
+  !*** ./src/ImageToggleOneMouseOver.js ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -196,81 +146,54 @@ const imageChangeOnScroll = () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/danlubbers/Documents/GitHub/pluralsight-tutorials/hello-next/src/ImageToggleOnScroll.js";
+var _jsxFileName = "/Users/danlubbers/Documents/GitHub/pluralsight-tutorials/hello-next/src/ImageToggleOneMouseOver.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const ImageToggleOnScroll = ({
+const ImageToggleOneMouseOver = ({
   primaryImage,
   secondaryImage
 }) => {
   const imageRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  const {
-    0: inView,
-    1: setInView
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const {
-    0: isLoading,
-    1: setIsLoading
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
-
-  const isInView = () => {
-    if (imageRef.current) {
-      const rect = imageRef.current.getBoundingClientRect();
-      console.log({
-        imageRef
-      });
-      return rect.top >= 0 && rect.bottom <= window.innerHeight;
-    }
-  };
-
-  const scrollHandler = () => {
-    setInView(() => {
-      return isInView();
-    });
-  };
-
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    window.addEventListener("scroll", scrollHandler);
-    setInView(isInView());
-    setIsLoading(false);
-    return () => {
-      window.removeEventListener("scroll", scrollHandler);
-    };
-  }, [isLoading]);
-  return !isLoading && __jsx("div", {
+  return __jsx("div", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 8,
       columnNumber: 5
     }
   }, __jsx("img", {
-    src: inView ? primaryImage : secondaryImage,
+    onMouseOver: () => {
+      imageRef.current.src = secondaryImage;
+    },
+    onMouseOut: () => {
+      imageRef.current.src = primaryImage;
+    },
+    src: primaryImage,
     alt: "",
     width: "800px",
     ref: imageRef,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 9,
       columnNumber: 7
     }
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (ImageToggleOnScroll);
+/* harmony default export */ __webpack_exports__["default"] = (ImageToggleOneMouseOver);
 
 /***/ }),
 
-/***/ 6:
-/*!********************************************!*\
-  !*** multi ./pages/imageToggleOnScroll.js ***!
-  \********************************************/
+/***/ 5:
+/*!***********************************************!*\
+  !*** multi ./pages/imageChangeOnMouseOver.js ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/danlubbers/Documents/GitHub/pluralsight-tutorials/hello-next/pages/imageToggleOnScroll.js */"./pages/imageToggleOnScroll.js");
+module.exports = __webpack_require__(/*! /Users/danlubbers/Documents/GitHub/pluralsight-tutorials/hello-next/pages/imageChangeOnMouseOver.js */"./pages/imageChangeOnMouseOver.js");
 
 
 /***/ }),
@@ -287,4 +210,4 @@ module.exports = require("react");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=imageToggleOnScroll.js.map
+//# sourceMappingURL=imageChangeOnMouseOver.js.map

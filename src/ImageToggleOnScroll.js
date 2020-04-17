@@ -10,6 +10,7 @@ const [isLoading, setIsLoading] = useState(true);
 const isInView = () => {
   if (imageRef.current) {
     const rect = imageRef.current.getBoundingClientRect();
+    console.log({imageRef})
     return rect.top >= 0 && rect.bottom <= window.innerHeight;
   }
 }
